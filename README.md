@@ -3,6 +3,7 @@
 
 ## Overview
 This project demonstrates an automated dictionary attack against a web application's login portal. When standard automated tools (like Hydra) produced False Positives due to parsing bugs with session cookies, a custom Bash script was developed to reliably execute the brute-force attack and validate the credentials.
+(./hydra_fp.png)
 
 ## Environment & Tools
 * **Target Environment:** DVWA (Damn Vulnerable Web Application) hosted on Windows 11.
