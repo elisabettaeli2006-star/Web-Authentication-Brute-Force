@@ -3,7 +3,7 @@
 
 ## Overview
 This project demonstrates an automated dictionary attack against a web application's login portal. When standard automated tools (like Hydra) produced False Positives due to parsing bugs with session cookies, a custom Bash script was developed to reliably execute the brute-force attack and validate the credentials.
-(./hydra_fp.png)
+![Hydra](./hydra_fp.png)
 
 ## Environment & Tools
 * **Target Environment:** DVWA (Damn Vulnerable Web Application) hosted on Windows 11.
@@ -23,7 +23,7 @@ To bypass initial access controls, an active session cookie (`PHPSESSID`) was ex
 A custom one-line Bash script was crafted to loop through the wordlist. It used `curl` to send GET requests with the injected session cookie and `grep` to parse the server's HTML response. The script was designed to silently discard incorrect attempts and explicitly highlight the successful payload.
 
 ### 4. Proof of execution
-![Hydra brute force](./brute_force.png)
+![brute force](./brute_force.png)
 
 **The Script:**
 ```bash
